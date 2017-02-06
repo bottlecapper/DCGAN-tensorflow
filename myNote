@@ -13,13 +13,22 @@ problem: tf.nn.sigmoid_cross_entropy_with_logits -- label
 change in DCGAN/model.py
 line 115,118,121: labels --> targets
 
+warning: summary names 2016-11-30
+change in DCGAN/model.py
+line 92,109,110,111: histogram_summary --> tf.summary.histogram
+line 123,124,128,129: scalar_summary --> tf.summary.scalar
+line 111: image_summary --> tf.summary.image
+line 156,158: merge_summary --> tf.summary.merge
+line 159: SummaryWriter --> tf.summary.FileWriter
 
+problem:
+Train a model first, then run test mode
+change in main.py
+line 25,26: False --> True
 
-
-
-
-
-
+problem: xrange undefined
+change in utils.py
+line 158: xrange --> range
 
 
 
