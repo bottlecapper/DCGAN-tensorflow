@@ -9,10 +9,9 @@ problem: 25088
 change in DCGAN/model.py
 line 320: [self.batch_size, -1] --> [-1, 8192]
 
-
-
-
-
+problem: tf.nn.sigmoid_cross_entropy_with_logits -- label
+change in DCGAN/model.py
+line 115,118,121: labels --> targets
 
 
 
