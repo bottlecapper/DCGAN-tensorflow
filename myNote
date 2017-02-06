@@ -1,0 +1,29 @@
+DCGAN:
+ref: https://bamos.github.io/2016/08/09/deep-completion/
+
+add environment variable:
+LD_LIBRARY_PATH=/usr/local/cuda/lib64
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
