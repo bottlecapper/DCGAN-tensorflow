@@ -7,7 +7,7 @@ LD_LIBRARY_PATH=/usr/local/cuda/lib64
 
 problem: 25088
 change in DCGAN/model.py
-line 320: [-1, 8192]
+line 320: [self.batch_size, -1] --> [-1, 8192]
 
 
 
