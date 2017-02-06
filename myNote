@@ -31,3 +31,4 @@ tensorboard --logdir=/home/jg/code/DCGAN/logs
 localhost:6006
 
 
+
