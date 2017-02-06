@@ -1,13 +1,12 @@
 DCGAN:
 ref: https://bamos.github.io/2016/08/09/deep-completion/
 
+Script: /home/jg/code/DCGAN/main.py
+Script parameters: --dataset mnist --input_height=28 --output_height=28 --c_dim=1 --is_train
+
 add environment variable:
 LD_LIBRARY_PATH=/usr/local/cuda/lib64
 
-
-problem: 25088
-change in DCGAN/model.py
-line 320: [self.batch_size, -1] --> [-1, 8192]
 
 problem: tf.nn.sigmoid_cross_entropy_with_logits -- label
 change in DCGAN/model.py
@@ -21,10 +20,6 @@ line 111: image_summary --> tf.summary.image
 line 156,158: merge_summary --> tf.summary.merge
 line 159: SummaryWriter --> tf.summary.FileWriter
 
-problem:
-Train a model first, then run test mode
-change in main.py
-line 25,26: False --> True
 
 problem: xrange undefined
 change in utils.py
@@ -32,6 +27,7 @@ line 158: xrange --> range
 
 
 
-
+tensorboard --logdir=/home/jg/code/DCGAN/logs
+localhost:6006
 
 
