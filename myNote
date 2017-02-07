@@ -1,6 +1,7 @@
 DCGAN:
 ref: https://bamos.github.io/2016/08/09/deep-completion/
 
+1. MNIST
 Script: /home/jg/code/DCGAN/main.py
 
 ### Train ###
@@ -39,10 +40,13 @@ A generator: given a random 8*8 label vector y (0-9), generate an image of 8*8 h
 
 
 
+2. celebA
+/home/jg/code/DCGAN/download.py
+Script parameters: celebA
 
 
-
-
+/home/jg/code/DCGAN/main.py
+Script parameters: --input_height=108 --is_train --is_crop True
 
 
 
