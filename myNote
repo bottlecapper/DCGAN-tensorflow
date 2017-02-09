@@ -50,7 +50,8 @@ Script parameters: --input_height=108 --is_train --is_crop True
 
 
 
-
+3. lsun
+too big dataset, 42.7 GB
 
 
 
