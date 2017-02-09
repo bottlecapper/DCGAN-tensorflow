@@ -51,7 +51,14 @@ Script parameters: --input_height=108 --is_train --is_crop True
 
 
 3. lsun
-too big dataset, 42.7 GB
+Script parameters: lsun
+
+Bedroom: too big dataset, 42.7 GB
+Classroom: 3.1 GB
+
+change the code in download.py:
+line 101: bedroom --> classroom
+
 
 
 
