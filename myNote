@@ -46,7 +46,7 @@ Script parameters: celebA
 
 
 /home/jg/code/DCGAN/main.py
-Script parameters: --input_height=108 --is_train --is_crop True
+Script parameters: --dataset celebA --input_height=108 --is_train --is_crop True
 
 
 
