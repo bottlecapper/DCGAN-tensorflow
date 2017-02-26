@@ -30,6 +30,8 @@ line 158: xrange --> range
 
 
 tensorboard --logdir=/home/jg/code/DCGAN/logs
+tensorboard --logdir=/media/jg/'New Volume'/20170226/logs
+tensorboard --logdir=/media/jg/OS/Users/GJ/Dropbox/JianTembine/Reference/'Generative Adversarial Networks'/Code/DCGAN/SGD0.0002result/logs
 localhost:6006
 
 
