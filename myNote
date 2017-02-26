@@ -61,5 +61,23 @@ line 101: bedroom --> classroom
 
 
 
+### 20170226 ###
+changed files: 
+/home/jg/miniconda3/lib/python3.5/site-packages/tensorflow/python/training/training.py
+line 42: @@BregmanOptimizer
+line 203: from tensorflow.python.training.bregman import BregmanOptimizer
+
+model.py
+line 165:    d_optim = tf.train.BregmanOptimizer(config.learning_rate, beta1=config.beta1) \
+                      .minimize(self.d_loss, var_list=self.d_vars)
+line 168     g_optim = tf.train.BregmanOptimizer(config.learning_rate, beta1=config.beta1) \
+                      .minimize(self.g_loss, var_list=self.g_vars)
+
+add file:
+/home/jg/miniconda3/lib/python3.5/site-packages/tensorflow/python/training/bregman.py
+
+
+
+
 
 
