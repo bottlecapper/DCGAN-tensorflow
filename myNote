@@ -81,10 +81,15 @@ line 168:    g_optim = tf.train.BregmanOptimizer(config.learning_rate, beta1=con
                       .minimize(self.g_loss, var_list=self.g_vars)
 
 utils.py
-line 228-250:
-for di in range(100):
-  z[(idx+di)%100] = values[(kdx+di)%64]
-
+line 228-250: OPTION=5
+              ...
+              for di in range(100):
+                z[(idx+di)%100] = values[(kdx+di)%64]
+              ...
+              
+main.py
+line 92-93:     ### OPTION = 1 ### same handwriting
+                OPTION = 5 ### different handwriting
 
 
 
