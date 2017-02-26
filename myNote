@@ -83,7 +83,7 @@ line 168:    g_optim = tf.train.BregmanOptimizer(config.learning_rate, beta1=con
 utils.py
 line 162:
 for di in range(100):
-  z[idx+di] = values[(kdx+di)%64]
+  z[(idx+di)%100] = values[(kdx+di)%64]
 
 
 
