@@ -77,8 +77,16 @@ line 406: apply_updates = self._finish2(update_ops, name)
 model.py
 line 165:    d_optim = tf.train.BregmanOptimizer(config.learning_rate, beta1=config.beta1) \
                       .minimize(self.d_loss, var_list=self.d_vars)
-line 168     g_optim = tf.train.BregmanOptimizer(config.learning_rate, beta1=config.beta1) \
+line 168:    g_optim = tf.train.BregmanOptimizer(config.learning_rate, beta1=config.beta1) \
                       .minimize(self.g_loss, var_list=self.g_vars)
+
+utils.py
+line 162:
+for di in range(100):
+  z[idx+di] = values[(kdx+di)%64]
+
+
+
 
 add file:
 /home/jg/miniconda3/lib/python3.5/site-packages/tensorflow/python/training/bregman.py
