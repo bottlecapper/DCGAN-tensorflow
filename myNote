@@ -67,6 +67,11 @@ changed files:
 line 42: @@BregmanOptimizer
 line 203: from tensorflow.python.training.bregman import BregmanOptimizer
 
+/home/jg/miniconda3/lib/python3.5/site-packages/tensorflow/python/training/optimizer.py
+line 60: return optimizer._apply_dense2(g, self._v)
+line 406: apply_updates = self._finish2(update_ops, name)
+
+
 model.py
 line 165:    d_optim = tf.train.BregmanOptimizer(config.learning_rate, beta1=config.beta1) \
                       .minimize(self.d_loss, var_list=self.d_vars)
